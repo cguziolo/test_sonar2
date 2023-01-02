@@ -21,7 +21,8 @@ class world:
 
         # add walls in the first and last columns
         for i in range(H):
-            self.w[i*L] = 1
+	    # comment to be change back to "1"
+            self.w[i*L] = 2
             self.w[i*L+L-1] = 1
         
         # add walls in the first and last lines
@@ -60,7 +61,7 @@ class world:
     # starting from tile number s0, find a path to tile number t
     # return (r, path) where r is true if such a path exists, false otherwise
     # and path contains the path if it exists  
-    def dfs(s0, t):
+    def dfs(s0):
         r = False
         path = []
         
