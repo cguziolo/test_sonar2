@@ -57,6 +57,12 @@ class world:
             # look in the four adjacent tiles and keep only those with no wall
             return list(filter(lambda x: self.w[x] != 1, [i - 1, i + 1, i - self.L, i + self.L]))
 
+
+    def func(x):
+        return x + 1
+    def test_answer():
+        assert func(3) == 5
+
     # Depth-first search
     # starting from tile number s0, find a path to tile number t
     # return (r, path) where r is true if such a path exists, false otherwise
